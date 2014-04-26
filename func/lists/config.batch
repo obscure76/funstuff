@@ -1,0 +1,12 @@
+
+netsh interface ip set address name="Local Area Connection" dhcp
+netsh interface ip set dnsservers name="Local Area Connection" source=dhcp
+
+
+
+
+netsh interface ip set address "Local Area Connection" static 10.10.20.90 255.255.255.0 10.10.20.1 1
+netsh interface ip set dns name="Local Area Connection" static 202.56.230.5 
+netsh interface ip add dns name="Local Area Connection" 10.10.20.1 index=2
+
+
